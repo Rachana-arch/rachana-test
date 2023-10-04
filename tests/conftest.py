@@ -27,6 +27,6 @@ def driver(request):
     driver.close()
 
 
-@pytest.fixture(params=[('Racahana', 'rachana@gmail.com', 'Female'), ('AAkash', 'Sharma', 'Male')])
+@pytest.fixture(params=[('Racahana', 'rachana@gmail.com', 'Female'), ('AAkash', 'Sharma', 'Male'), ('AAkash', 'Sharma', 'Male')])
 def getData(request):
     return request.param
